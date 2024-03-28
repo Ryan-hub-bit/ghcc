@@ -1,0 +1,122 @@
+2024-03-27 16:55:05,046 INFO: Running with arguments:
+<class '__main__.Arguments'>
+╔══════════════════════╤═════════════════════╗
+║ Arguments            │ Values              ║
+╠══════════════════════╪═════════════════════╣
+║ repo_list_file       │ './github-list.txt' ║
+║ clone_folder         │ 'repos/'            ║
+║ binary_folder        │ 'binaries/'         ║
+║ archive_folder       │ 'archives/'         ║
+║ n_procs              │ 0                   ║
+║ log_file             │ 'log.txt'           ║
+║ clone_timeout        │ 600                 ║
+║ force_reclone        │ False               ║
+║ compile_timeout      │ 900                 ║
+║ force_recompile      │ False               ║
+║ docker_batch_compile │ True                ║
+║ compression_type     │ 'gzip'              ║
+║ max_archive_size     │ 104857600           ║
+║ record_libraries     │ None                ║
+║ logging_level        │ 'info'              ║
+║ max_repos            │ None                ║
+║ recursive_clone      │ True                ║
+║ write_db             │ True                ║
+║ record_metainfo      │ False               ║
+║ gcc_override_flags   │ None                ║
+╚══════════════════════╧═════════════════════╝
+
+2024-03-27 16:55:05,047 WARNING: Crawling starts...
+2024-03-27 16:55:05,063 INFO: 0 entries loaded from DB
+2024-03-27 16:55:05,716 INFO: huzecong/ghcc successfully cloned (0.64s, 482.50K)
+2024-03-27 16:55:05,727 WARNING: No Makefiles found in huzecong/ghcc, repository deleted
+2024-03-27 16:55:05,731 INFO: Added huzecong/ghcc to DB
+2024-03-27 16:55:38,911 INFO: torvalds/linux successfully cloned (33.00s, 1.60G)
+2024-03-27 16:55:39,133 INFO: Starting compilation for torvalds/linux...
+2024-03-27 17:10:43,920 WARNING: 3 (3) out of 2959 Makefile(s) in torvalds/linux compiled (partially), yielding 0 binaries
+2024-03-27 17:10:45,659 INFO: Removed torvalds/linux because repository size (1.60G) exceeds limits
+2024-03-27 17:10:45,662 INFO: Added torvalds/linux to DB
+2024-03-27 17:10:51,052 INFO: FFmpeg/FFmpeg successfully cloned (5.36s, 96.81M)
+2024-03-27 17:10:51,080 INFO: Starting compilation for FFmpeg/FFmpeg...
+2024-03-27 17:36:27,400 INFO: Running with arguments:
+<class '__main__.Arguments'>
+╔══════════════════════╤═════════════════════╗
+║ Arguments            │ Values              ║
+╠══════════════════════╪═════════════════════╣
+║ repo_list_file       │ './github-list.txt' ║
+║ clone_folder         │ 'repos/'            ║
+║ binary_folder        │ 'binaries/'         ║
+║ archive_folder       │ 'archives/'         ║
+║ n_procs              │ 0                   ║
+║ log_file             │ 'log.txt'           ║
+║ clone_timeout        │ 600                 ║
+║ force_reclone        │ False               ║
+║ compile_timeout      │ 900                 ║
+║ force_recompile      │ False               ║
+║ docker_batch_compile │ True                ║
+║ compression_type     │ 'gzip'              ║
+║ max_archive_size     │ 104857600           ║
+║ record_libraries     │ None                ║
+║ logging_level        │ 'info'              ║
+║ max_repos            │ None                ║
+║ recursive_clone      │ True                ║
+║ write_db             │ True                ║
+║ record_metainfo      │ False               ║
+║ gcc_override_flags   │ None                ║
+╚══════════════════════╧═════════════════════╝
+
+2024-03-27 17:36:27,400 WARNING: Crawling starts...
+2024-03-27 17:36:27,416 INFO: 0 entries loaded from DB
+2024-03-27 17:36:28,021 INFO: huzecong/ghcc successfully cloned (0.59s, 482.50K)
+2024-03-27 17:36:28,034 WARNING: No Makefiles found in huzecong/ghcc, repository deleted
+2024-03-27 17:36:28,039 INFO: Added huzecong/ghcc to DB
+2024-03-27 17:36:59,532 INFO: torvalds/linux successfully cloned (31.29s, 1.60G)
+2024-03-27 17:36:59,751 INFO: Starting compilation for torvalds/linux...
+2024-03-27 17:52:04,147 WARNING: 3 (3) out of 2959 Makefile(s) in torvalds/linux compiled (partially), yielding 0 binaries
+2024-03-27 17:52:05,938 INFO: Removed torvalds/linux because repository size (1.60G) exceeds limits
+2024-03-27 17:52:05,942 INFO: Added torvalds/linux to DB
+2024-03-27 17:52:11,181 INFO: FFmpeg/FFmpeg successfully cloned (5.21s, 96.82M)
+2024-03-27 17:52:11,211 INFO: Starting compilation for FFmpeg/FFmpeg...
+2024-03-27 18:07:15,867 WARNING: 0 (0) out of 48 Makefile(s) in FFmpeg/FFmpeg compiled (partially), yielding 0 binaries
+2024-03-27 18:07:18,864 INFO: Compressed FFmpeg/FFmpeg, folder removed
+2024-03-27 18:07:18,867 INFO: Added FFmpeg/FFmpeg to DB
+2024-03-27 18:10:04,830 INFO: pytorch/pytorch successfully cloned (165.75s, 2.73G)
+2024-03-27 18:10:05,097 INFO: Starting compilation for pytorch/pytorch...
+2024-03-27 18:25:14,969 WARNING: 8 (8) out of 103 Makefile(s) in pytorch/pytorch compiled (partially), yielding 0 binaries
+2024-03-27 18:25:16,887 INFO: Removed pytorch/pytorch because repository size (2.73G) exceeds limits
+2024-03-27 18:25:16,890 INFO: Added pytorch/pytorch to DB
+2024-03-27 18:25:16,892 INFO: #Repos: 0 (0 with .gitmodules), #Binaries: 0
+#Makefiles: 0 (0 succeeded, 0 using automake)
+2024-03-28 07:41:28,516 INFO: Running with arguments:
+<class '__main__.Arguments'>
+╔══════════════════════╤═════════════════════╗
+║ Arguments            │ Values              ║
+╠══════════════════════╪═════════════════════╣
+║ repo_list_file       │ './github-list.txt' ║
+║ clone_folder         │ 'repos/'            ║
+║ binary_folder        │ 'binaries/'         ║
+║ archive_folder       │ 'archives/'         ║
+║ n_procs              │ 0                   ║
+║ log_file             │ 'log.txt'           ║
+║ clone_timeout        │ 600                 ║
+║ force_reclone        │ False               ║
+║ compile_timeout      │ 900                 ║
+║ force_recompile      │ False               ║
+║ docker_batch_compile │ True                ║
+║ compression_type     │ 'gzip'              ║
+║ max_archive_size     │ 104857600           ║
+║ record_libraries     │ None                ║
+║ logging_level        │ 'info'              ║
+║ max_repos            │ None                ║
+║ recursive_clone      │ True                ║
+║ write_db             │ True                ║
+║ record_metainfo      │ False               ║
+║ gcc_override_flags   │ None                ║
+╚══════════════════════╧═════════════════════╝
+
+2024-03-28 07:41:28,516 WARNING: Crawling starts...
+2024-03-28 07:41:28,531 INFO: 0 entries loaded from DB
+2024-03-28 07:41:29,234 INFO: huzecong/ghcc successfully cloned (0.69s, 482.50K)
+2024-03-28 07:41:29,246 WARNING: No Makefiles found in huzecong/ghcc, repository deleted
+2024-03-28 07:41:29,250 INFO: Added huzecong/ghcc to DB
+2024-03-28 07:41:58,481 INFO: torvalds/linux successfully cloned (29.03s, 1.60G)
+2024-03-28 07:41:58,694 INFO: Starting compilation for torvalds/linux...

@@ -2,4 +2,6 @@
 !ghcc/
 !scripts/
 !*.py
+!llvm-typro/
 !requirements.txt
+!examples/

@@ -68,7 +68,12 @@ def main():
         known_args.append("-c")
 
     try:
-        gcc = "gcc"  # "gcc-4.7"
+        os.environ['CC'] = '/typro/build/bin/clang'
+        os.environ['CXX'] = '/typro/build/bin/clang++'
+        os.environ['TG_CFI_OUTPUT'] = 'auto'
+        os.environ['TG_IFCC_OUTPUT'] = 'auto'
+        os.environ['TG_ENFORCE'] = 'false'
+        gcc = "/typro/build/bin/clang"  # "gcc-4.7"
         # When multiple -O options are specified, the last one takes precedence.
         gcc_args = [gcc] + known_args + unknown_args + ["-o", out_file, "-O0", "-g"] + override_flags
         # Add linker options after files that use them.
