@@ -1,0 +1,8 @@
+kerolasa/lelux-utiliteetit
+joyent/libuv
+bitly/dablooms
+sigflup/Mega-Happy-Sprite
+wslhacn/Programming
+victormatheus/gegl-opencl-2
+InstigatorX/InstigatorX-V4-Kernel
+antirez/redis
