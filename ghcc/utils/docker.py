@@ -59,14 +59,8 @@ def run_docker_command(command: Union[str, List[str]], cwd: Optional[str] = None
         # Timeout is implemented by calling `timeout` inside Docker container.
         docker_command.extend(["timeout", f"{timeout}s"])
     docker_command.append(command)
-    # my_env = os.environ.copy()
-    # my_env['CC'] = '/typro/build/bin/clang'
-    # my_env['CXX'] = '/typro/build/bin/clang++'
-    # my_env['TG_CFI_OUTPUT'] = 'auto'
-    # my_env['TG_IFCC_OUTPUT'] = 'auto'
-    # my_env['TG_ENFORCE'] = '0'
     ret = run_command(' '.join(docker_command), shell=True, **kwargs)
-    log(f"return of run_command: {ret}")
+    #log(f"return of run_command: {ret}")
 
     # Check whether exceeded timeout limit by inspecting return code.
     if ret.return_code == 124:

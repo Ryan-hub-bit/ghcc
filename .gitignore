@@ -1,9 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Example user template
 
-binaries
-archives
-repos
+binaries/
+archives/
+repos/
 
 database-config.json
 

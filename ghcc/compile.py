@@ -313,11 +313,13 @@ def compile_and_move(repo_binary_dir: str, repo_path: str, makefile_dirs: List[s
         # Successful compilations might not generate binaries, while failed compilations may also yield binaries.
         if len(compile_result.elf_files) > 0 or compile_result.success:
             hashes: List[str] = []
-            log(f"elf_files: {compile_result.elf_files}")
+            #log(f"elf_files: {compile_result.elf_files}")
             json_files = []
+            all_binaries = os.path.join(repo_binary_dir, "binary_list")
+            all_jsons = os.path.join(repo_binary_dir, "json_list")
             for path in compile_result.elf_files:
-                log(f"path:{path}")
-                log(f"type(path) :{type(path)}")
+                #log(f"path:{path}")
+                #log(f"type(path) :{type(path)}")
                 if path.endswith(".tgcfi.json"):
                     continue
                 signature = hash_fn(make_dir, path)
@@ -329,13 +331,18 @@ def compile_and_move(repo_binary_dir: str, repo_path: str, makefile_dirs: List[s
                 # run_command(['mv',json_path, signature_path])
                 shutil.move(json_path,signature_path)
                 json_files.append(signature_path)
-                shutil.move(full_path, os.path.join(repo_binary_dir, signature))
+                # shutil.move(full_path, os.path.join(repo_binary_dir, signature))
                 #shutil.move(full_path, os.path.join(repo_binary_dir, path))
-            log(f"json_file: {json_files}")
+                shutil.move(full_path, os.path.join(all_binaries, signature))
+                change_log = os.path.join(repo_binary_dir, "changelog.txt")
+                with open(change_log, 'a') as f:
+                    content = f"{full_path} -> {signature} \n"
+                    f.write(content)
+            #log(f"json_file: {json_files}")
             for json_file in json_files:
                 filename = json_file.split("/")[-1]
-                log(f"filename:{filename}")
-                shutil.move(json_file,os.path.join(repo_binary_dir, filename))
+                #log(f"filename:{filename}")
+                shutil.move(json_file,os.path.join(all_jsons, filename))
 
             yield {
                 "directory": make_dir,
