@@ -236,10 +236,13 @@ def clone_and_compile(repo_info: RepoInfo, clone_folder: str, binary_folder: str
             os.makedirs(repo_binary_dir)
         all_binaries : str = "binaries/binary_list"
         all_jsons : str = "binaries/json_list"
+        all_callsites: str = "binaries/callsite_list"
         if not os.path.exists(all_binaries):
             os.makedirs(all_binaries)
         if not os.path.exists(all_jsons):
             os.makedirs(all_jsons)
+        if not os.path.exists(all_callsites):
+            os.makedirs(all_callsites)
         flutes.log(f"Starting compilation for {repo_full_name}...")
 
         if docker_batch_compile:

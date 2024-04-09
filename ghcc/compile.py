@@ -143,6 +143,8 @@ def _make_skeleton(directory: str, timeout: Optional[float] = None,
         for file in diff_files:
             if file.endswith(".tgcfi.json"):
                 result.elf_files.append(file)
+            elif file.endswith(".txt"):
+                result.elf_files.append(file)
             elif check_file_fn(directory, file):
                 result.elf_files.append(file)
         log(f" 1- result.elf_files:{result.elf_files}")
@@ -315,22 +317,31 @@ def compile_and_move(repo_binary_dir: str, repo_path: str, makefile_dirs: List[s
             hashes: List[str] = []
             #log(f"elf_files: {compile_result.elf_files}")
             json_files = []
+            callsite_files = []
             all_binaries = os.path.join(repo_binary_dir, "binary_list")
             all_jsons = os.path.join(repo_binary_dir, "json_list")
+            #callsite content
+            all_callistes = os.path.join(repo_binary_dir,"callsite_list")
             for path in compile_result.elf_files:
                 #log(f"path:{path}")
                 #log(f"type(path) :{type(path)}")
                 if path.endswith(".tgcfi.json"):
                     continue
+                if path.endswith(".txt"):
+                    continue
                 signature = hash_fn(make_dir, path)
                 hashes.append(signature)
                 full_path = os.path.join(make_dir, path)
                 json_path = full_path + ".tgcfi.json"
+                txt_path = full_path + ".txt"
                 signature_path = os.path.join(make_dir,signature + ".tgcfi.json")
+                callsite_path = os.path.join(make_dir, signature + ".txt")
                 # example  flutes.run_command(['cp', file_path, stripped.name])
                 # run_command(['mv',json_path, signature_path])
                 shutil.move(json_path,signature_path)
+                shutil.move(txt_path,callsite_path)
                 json_files.append(signature_path)
+                callsite_files.append(callsite_path)
                 # shutil.move(full_path, os.path.join(repo_binary_dir, signature))
                 #shutil.move(full_path, os.path.join(repo_binary_dir, path))
                 shutil.move(full_path, os.path.join(all_binaries, signature))
@@ -343,6 +354,9 @@ def compile_and_move(repo_binary_dir: str, repo_path: str, makefile_dirs: List[s
                 filename = json_file.split("/")[-1]
                 #log(f"filename:{filename}")
                 shutil.move(json_file,os.path.join(all_jsons, filename))
+            for callsite_file in callsite_files:
+                filename = callsite_file.split("/")[-1]
+                shutil.move(callsite_file, os.path.join(all_callistes, filename))
 
             yield {
                 "directory": make_dir,
