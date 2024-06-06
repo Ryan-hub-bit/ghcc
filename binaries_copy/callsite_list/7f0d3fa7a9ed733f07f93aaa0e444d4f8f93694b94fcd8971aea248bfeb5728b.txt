@@ -1,0 +1,7 @@
+call#80.0 in fiu_fail
+call#80.0 in wtable_free
+call#80.0 in internal wildcards_set@wtable.c
+call#80.0 in wtable_del
+call#80.0 in hash_free
+call#80.0 in internal _hash_set@hash.c
+call#80.0 in hash_del

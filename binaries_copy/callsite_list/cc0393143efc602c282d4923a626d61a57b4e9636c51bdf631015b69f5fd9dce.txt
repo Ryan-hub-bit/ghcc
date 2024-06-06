@@ -1,0 +1,6 @@
+call#80.0 in pcre_study
+call#80.0 in pcre_compile
+call#80.1 in pcre_compile
+call#80.0 in pcre_exec
+call#80.1 in pcre_exec
+call#80.2 in pcre_exec

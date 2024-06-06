@@ -1,0 +1,9 @@
+call#80.0 in pinMode
+call#80.0 in pullUpDnControl
+call#80.0 in digitalRead
+call#80.0 in digitalWrite
+call#80.0 in pwmWrite
+call#80.0 in analogRead
+call#80.0 in analogWrite
+call#80.0 in internal interruptHandler@wiringPi.c
+call#80.0 in loadWPiExtension

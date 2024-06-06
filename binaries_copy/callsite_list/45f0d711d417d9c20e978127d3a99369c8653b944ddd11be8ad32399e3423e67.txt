@@ -1,0 +1,2 @@
+call#80.0 in poll_thread_serial
+call#80.0 in internal poll_thread@src/gsm0710muxd.c

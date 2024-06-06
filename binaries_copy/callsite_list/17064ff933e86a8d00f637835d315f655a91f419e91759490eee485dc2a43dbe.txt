@@ -1,0 +1,10 @@
+call#80.0 in grid_new
+call#80.0 in internal solve_game_rec@loopy.c
+call#80.0 in internal penrose_p2_large@penrose.c
+call#80.0 in internal penrose_p3_small@penrose.c
+call#80.0 in internal penrose_p3_large@penrose.c
+call#80.0 in internal penrose_p2_small@penrose.c
+call#80.0 in internal add234_internal@tree234.c
+call#80.1 in internal add234_internal@tree234.c
+call#80.2 in internal add234_internal@tree234.c
+call#80.0 in findrelpos234

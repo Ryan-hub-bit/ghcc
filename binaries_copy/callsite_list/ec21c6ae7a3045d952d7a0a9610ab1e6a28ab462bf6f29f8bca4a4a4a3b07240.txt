@@ -1,0 +1,6 @@
+call#80.0 in internal check_termtype@../progs/tic.c
+call#80.0 in fmt_entry
+call#80.1 in fmt_entry
+call#80.2 in fmt_entry
+call#80.0 in _nc_read_entry_source
+call#80.0 in _nc_resolve_uses2

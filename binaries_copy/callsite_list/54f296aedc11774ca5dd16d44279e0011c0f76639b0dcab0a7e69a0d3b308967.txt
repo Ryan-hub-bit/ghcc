@@ -1,0 +1,7 @@
+call#80.0 in run_applets
+call#80.0 in internal do_e@rc-applets.c
+call#80.1 in internal do_e@rc-applets.c
+call#80.2 in internal do_e@rc-applets.c
+call#80.3 in internal do_e@rc-applets.c
+call#80.7 in rc_plugin_run
+call#80.0 in rc_update

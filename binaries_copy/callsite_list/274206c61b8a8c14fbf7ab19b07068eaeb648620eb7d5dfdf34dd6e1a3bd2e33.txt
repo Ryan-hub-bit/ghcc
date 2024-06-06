@@ -1,0 +1,3 @@
+call#80.0 in kgetline
+call#80.0 in kgetline2
+call#80.1 in kgetline2

@@ -1,0 +1,23 @@
+call#80.0 in fill_distribution
+call#80.0 in internal findreplaceengine@src/lcthw/bstrlib.c
+call#80.1 in internal findreplaceengine@src/lcthw/bstrlib.c
+call#80.2 in internal findreplaceengine@src/lcthw/bstrlib.c
+call#80.0 in breada
+call#80.0 in bassigngets
+call#80.0 in bgetsa
+call#80.0 in bsreadlna
+call#80.0 in bsreadlnsa
+call#80.0 in bsreada
+call#80.1 in bsreada
+call#80.0 in bssplitscb
+call#80.1 in bssplitscb
+call#80.2 in bssplitscb
+call#80.0 in bssplitstrcb
+call#80.1 in bssplitstrcb
+call#80.2 in bssplitstrcb
+call#80.0 in bsplitcb
+call#80.0 in bsplitscb
+call#80.1 in bsplitscb
+call#80.0 in bsplitstrcb
+call#80.1 in bsplitstrcb
+call#80.2 in bsplitstrcb

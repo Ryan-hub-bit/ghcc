@@ -1,0 +1,22 @@
+call#80.0 in capture
+call#80.0 in math
+call#80.1 in math
+call#80.0 in overDyad
+call#80.0 in internal scanDyad@src/kx.c
+call#80.0 in internal eachpair2@src/kx.c
+call#80.0 in vf_ex
+call#80.1 in vf_ex
+call#80.2 in vf_ex
+call#80.3 in vf_ex
+call#80.4 in vf_ex
+call#80.5 in vf_ex
+call#80.6 in vf_ex
+call#80.7 in vf_ex
+call#80.8 in vf_ex
+call#80.9 in vf_ex
+call#80.10 in vf_ex
+call#80.11 in vf_ex
+call#80.12 in vf_ex
+call#80.0 in floor_ceil
+call#80.1 in floor_ceil
+call#80.0 in dp

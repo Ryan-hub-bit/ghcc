@@ -1,0 +1,12 @@
+call#80.0 in Room_move
+call#80.0 in Room_attack
+call#80.0 in Map_move
+call#80.0 in Map_attack
+call#80.0 in process_input
+call#80.1 in process_input
+call#80.2 in process_input
+call#80.3 in process_input
+call#80.4 in process_input
+call#80.0 in main
+call#80.0 in Object_new
+call#80.1 in Object_new

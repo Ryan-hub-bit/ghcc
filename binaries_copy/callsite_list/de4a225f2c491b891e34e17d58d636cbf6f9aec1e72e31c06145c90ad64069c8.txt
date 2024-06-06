@@ -1,0 +1,53 @@
+call#80.0 in shutdown_shared_katcp
+call#80.0 in propagate_acquire_katcp
+call#80.1 in propagate_acquire_katcp
+call#80.0 in append_sensor_value_katcp
+call#80.0 in destroy_acquire_katcp
+call#80.0 in internal run_acquire_katcp@nonsense.c
+call#80.1 in internal run_acquire_katcp@nonsense.c
+call#80.2 in internal run_acquire_katcp@nonsense.c
+call#80.0 in internal destroy_sensor_katcp@nonsense.c
+call#80.0 in internal reload_sensor_katcp@nonsense.c
+call#80.0 in internal create_nonsense_katcp@nonsense.c
+call#80.0 in scan_sensor_diff_katcp
+call#80.0 in sensor_limit_cmd_katcp
+call#80.0 in append_sensor_type_katcp
+call#80.0 in append_sensor_diff_katcp
+call#80.0 in search_type_katcp
+call#80.0 in complex_inorder_traverse_avltree
+call#80.0 in print_inorder_avltree
+call#80.0 in free_node_complex_avltree
+call#80.0 in internal complex_to_reduced_free_avltree@avltree.c
+call#80.0 in destroy_complex_avltree
+call#80.0 in destroy_tobject_katcp
+call#80.0 in print_tobject_katcp
+call#80.0 in print_dict_type_katcp
+call#80.0 in destroy_arbs_katcp
+call#80.0 in foreach_arb_katcp
+call#80.0 in internal clear_endpoint_katcp@endpoint.c
+call#80.0 in run_endpoints_katcp
+call#80.0 in destroy_gueue_katcl
+call#80.0 in get_precedence_head_gueue_katcl
+call#80.0 in internal broadcast_group_katcp@dpx-core.c
+call#80.0 in process_outstanding_flat_katcp
+call#80.0 in process_map_flat_katcp
+call#80.0 in destroy_cmd_item_katcp
+call#80.0 in fixup_type_vrbl_katcp
+call#80.1 in fixup_type_vrbl_katcp
+call#80.0 in scan_tree_vrbl_katcp
+call#80.0 in excise_tree_vrbl_katcp
+call#80.0 in element_tree_vrbl_katcp
+call#80.0 in scan_array_vrbl_katcp
+call#80.0 in excise_array_vrbl_katcp
+call#80.0 in element_array_vrbl_katcp
+call#80.0 in add_payload_vrbl_katcp
+call#80.0 in release_vrbl_katcp
+call#80.0 in setup_vrbl_katcp
+call#80.0 in scan_vrbl_katcp
+call#80.1 in scan_vrbl_katcp
+call#80.0 in find_payload_katcp
+call#80.0 in destroy_vrbl_katcp
+call#80.0 in for_all_flats_vrbl_katcp
+call#80.1 in for_all_flats_vrbl_katcp
+call#80.2 in for_all_flats_vrbl_katcp
+call#80.0 in excise_vrbl_katcp

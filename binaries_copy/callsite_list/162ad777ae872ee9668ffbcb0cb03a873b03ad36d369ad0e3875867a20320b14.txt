@@ -1,0 +1,2 @@
+call#80.0 in ghpringbuf_pop
+call#80.0 in ghpringbuf_put

@@ -1,0 +1,6 @@
+call#80.0 in internal do_lookup@bst.c
+call#80.0 in internal do_lookup@rb.c
+call#80.0 in internal do_lookup@avl.c
+call#80.0 in internal do_splay@splay.c
+call#80.1 in internal do_splay@splay.c
+call#80.2 in internal do_splay@splay.c

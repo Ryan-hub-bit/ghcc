@@ -1,0 +1,12 @@
+call#80.0 in bsdconv_create
+call#80.1 in bsdconv_create
+call#80.0 in bsdconv_init
+call#80.0 in bsdconv
+call#80.1 in bsdconv
+call#80.2 in bsdconv
+call#80.3 in bsdconv
+call#80.4 in bsdconv
+call#80.5 in bsdconv
+call#80.0 in bsdconv_destroy
+call#80.0 in internal _cbcreate@src/libbsdconv.c
+call#80.0 in bsdconv_ctl

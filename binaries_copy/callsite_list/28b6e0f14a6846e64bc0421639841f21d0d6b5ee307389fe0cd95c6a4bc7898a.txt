@@ -1,0 +1,5 @@
+call#80.0 in sb_stemmer_new
+call#80.0 in sb_stemmer_delete
+call#80.0 in sb_stemmer_stem
+call#80.0 in find_among
+call#80.0 in find_among_b

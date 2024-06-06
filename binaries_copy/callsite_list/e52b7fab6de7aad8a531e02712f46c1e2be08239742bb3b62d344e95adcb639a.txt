@@ -1,0 +1,6 @@
+call#80.0 in read_zone_file
+call#80.0 in call_get_wired
+call#80.0 in store_record
+call#80.0 in validate_rrset
+call#80.0 in validate_record
+call#80.0 in internal allprefixed_traverse@cbtree.c

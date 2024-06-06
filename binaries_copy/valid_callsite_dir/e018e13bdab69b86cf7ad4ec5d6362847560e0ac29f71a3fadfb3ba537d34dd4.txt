@@ -1,0 +1,2 @@
+call#80.0 in internal walk_relocs@arch/x86/tools/relocs.c
+call#80.1 in internal walk_relocs@arch/x86/tools/relocs.c

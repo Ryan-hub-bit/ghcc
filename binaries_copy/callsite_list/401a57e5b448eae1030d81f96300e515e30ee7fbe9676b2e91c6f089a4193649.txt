@@ -1,0 +1,5 @@
+call#80.0 in ucl_nrv2e_99_compress
+call#80.1 in ucl_nrv2e_99_compress
+call#80.0 in internal find_match@n2e_99.c
+call#80.0 in ucl_alloc
+call#80.0 in ucl_free

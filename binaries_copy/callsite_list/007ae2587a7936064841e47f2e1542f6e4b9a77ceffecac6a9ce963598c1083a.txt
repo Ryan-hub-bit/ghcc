@@ -1,0 +1,27 @@
+call#80.0 in internal resp_spin_page_20@vtltape.c
+call#80.0 in resp_spout
+call#80.1 in resp_spout
+call#80.0 in loadTape
+call#80.1 in loadTape
+call#80.2 in loadTape
+call#80.3 in loadTape
+call#80.4 in loadTape
+call#80.5 in loadTape
+call#80.0 in unloadTape
+call#80.1 in unloadTape
+call#80.0 in internal config_lu@vtltape.c
+call#80.1 in internal config_lu@vtltape.c
+call#80.2 in internal config_lu@vtltape.c
+call#80.0 in internal processCommand@vtltape.c
+call#80.1 in internal processCommand@vtltape.c
+call#80.2 in internal processCommand@vtltape.c
+call#80.0 in complete_read_6
+call#80.0 in ssc_write_6
+call#80.0 in ssc_format_medium
+call#80.0 in internal set_mode_compression@ssc.c
+call#80.1 in internal set_mode_compression@ssc.c
+call#80.0 in internal set_device_configuration@ssc.c
+call#80.1 in internal set_device_configuration@ssc.c
+call#80.0 in ssc_erase
+call#80.0 in ssc_write_filemarks
+call#80.0 in internal setup_crypto@mhvtl_io.c

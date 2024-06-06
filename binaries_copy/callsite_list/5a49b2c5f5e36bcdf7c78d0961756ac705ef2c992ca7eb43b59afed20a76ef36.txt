@@ -1,0 +1,7 @@
+call#80.0 in makemask_
+call#80.0 in cosmic_
+call#80.0 in probgal_
+call#80.0 in chisq_
+call#80.1 in chisq_
+call#80.0 in addstar_
+call#80.1 in addstar_

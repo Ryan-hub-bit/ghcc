@@ -1,0 +1,16 @@
+call#80.0 in heapsort
+call#80.1 in heapsort
+call#80.2 in heapsort
+call#80.3 in heapsort
+call#80.0 in mergesort
+call#80.1 in mergesort
+call#80.2 in mergesort
+call#80.3 in mergesort
+call#80.4 in mergesort
+call#80.5 in mergesort
+call#80.0 in internal setup@src/merge.c
+call#80.1 in internal setup@src/merge.c
+call#80.2 in internal setup@src/merge.c
+call#80.3 in internal setup@src/merge.c
+call#80.0 in internal insertionsort@src/merge.c
+call#80.0 in __fdnlist

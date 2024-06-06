@@ -1,0 +1,2 @@
+call#80.0 in mpi_is_prime
+call#80.0 in mpi_gen_prime

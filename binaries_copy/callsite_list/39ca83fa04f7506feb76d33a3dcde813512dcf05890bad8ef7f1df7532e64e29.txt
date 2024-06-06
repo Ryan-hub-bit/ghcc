@@ -1,0 +1,17 @@
+call#80.0 in internal create_path@dlz_filesystem_dynamic.c
+call#80.0 in dlz_allnodes
+call#80.1 in dlz_allnodes
+call#80.0 in internal process_dir@dlz_filesystem_dynamic.c
+call#80.1 in internal process_dir@dlz_filesystem_dynamic.c
+call#80.2 in internal process_dir@dlz_filesystem_dynamic.c
+call#80.3 in internal process_dir@dlz_filesystem_dynamic.c
+call#80.4 in internal process_dir@dlz_filesystem_dynamic.c
+call#80.5 in internal process_dir@dlz_filesystem_dynamic.c
+call#80.0 in dlz_findzonedb
+call#80.0 in dlz_lookup
+call#80.1 in dlz_lookup
+call#80.0 in dlz_create
+call#80.1 in dlz_create
+call#80.2 in dlz_create
+call#80.3 in dlz_create
+call#80.4 in dlz_create

@@ -1,0 +1,15 @@
+call#80.0 in traverse
+call#80.1 in traverse
+call#80.2 in traverse
+call#80.3 in traverse
+call#80.4 in traverse
+call#80.5 in traverse
+call#80.0 in df1
+call#80.1 in df1
+call#80.0 in df2
+call#80.1 in df2
+call#80.0 in sex1
+call#80.0 in internal ado@function.c
+call#80.1 in internal ado@function.c
+call#80.2 in internal ado@function.c
+call#80.0 in parse

@@ -1,0 +1,3 @@
+call#80.0 in luaA_push_type
+call#80.0 in luaA_to_type
+call#80.0 in internal luaA_call_entry@lautoc.c

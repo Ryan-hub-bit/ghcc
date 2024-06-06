@@ -1,0 +1,8 @@
+call#80.0 in InflateInitialize
+call#80.0 in InflatePutBuffer
+call#80.0 in internal inflate_stored@inflate.c
+call#80.0 in internal inflate_codes@inflate.c
+call#80.1 in internal inflate_codes@inflate.c
+call#80.0 in internal huft_free@inflate.c
+call#80.0 in internal huft_build@inflate.c
+call#80.0 in InflateTerminate

@@ -1,0 +1,12 @@
+call#80.1 in openat
+call#80.1 in open
+call#80.1 in open64
+call#80.1 in creat
+call#80.1 in creat64
+call#80.1 in openat64
+call#80.1 in dup
+call#80.1 in dup2
+call#80.1 in close
+call#80.1 in fopen
+call#80.1 in fopen64
+call#80.1 in fclose

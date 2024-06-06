@@ -1,0 +1,3 @@
+call#80.0 in internal exec_special@emulator/emulator.c
+call#80.0 in internal await_tick@emulator/emulator.c
+call#80.0 in dcpu_run

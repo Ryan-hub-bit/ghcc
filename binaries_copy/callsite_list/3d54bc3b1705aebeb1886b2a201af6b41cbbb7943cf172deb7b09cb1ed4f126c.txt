@@ -1,0 +1,5 @@
+call#80.0 in internal new_foreach_bridge@ead.c
+call#80.0 in internal old_foreach_bridge@ead.c
+call#80.0 in internal br_foreach_port@ead.c
+call#80.0 in internal old_foreach_port@ead.c
+call#80.0 in internal parse_message@ead.c

@@ -1,0 +1,17 @@
+call#80.0 in hashWriteByte
+call#80.0 in pb_read
+call#80.0 in internal decode_extension@pb_decode.c
+call#80.0 in internal decode_static_field@pb_decode.c
+call#80.1 in internal decode_static_field@pb_decode.c
+call#80.2 in internal decode_static_field@pb_decode.c
+call#80.3 in internal decode_static_field@pb_decode.c
+call#80.0 in internal decode_callback_field@pb_decode.c
+call#80.1 in internal decode_callback_field@pb_decode.c
+call#80.0 in pb_write
+call#80.0 in internal encode_extension_field@pb_encode.c
+call#80.0 in internal encode_static_field@pb_encode.c
+call#80.1 in internal encode_static_field@pb_encode.c
+call#80.0 in internal encode_callback_field@pb_encode.c
+call#80.0 in internal encode_array@pb_encode.c
+call#80.1 in internal encode_array@pb_encode.c
+call#80.2 in internal encode_array@pb_encode.c

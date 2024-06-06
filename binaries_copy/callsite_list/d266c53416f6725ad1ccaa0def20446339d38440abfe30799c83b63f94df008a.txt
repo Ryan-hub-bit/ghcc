@@ -1,0 +1,4 @@
+call#80.0 in xdg_test_shutdown
+call#80.0 in internal xdg_run_command_on_dirs@xdgmime.c
+call#80.1 in internal xdg_run_command_on_dirs@xdgmime.c
+call#80.2 in internal xdg_run_command_on_dirs@xdgmime.c

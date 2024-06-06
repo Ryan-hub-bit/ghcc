@@ -1,0 +1,2 @@
+call#80.0 in internal solve_rowcols@magnets.c
+call#80.1 in internal solve_rowcols@magnets.c

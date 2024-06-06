@@ -1,0 +1,38 @@
+call#80.0 in internal dispatcher_thread@dispatcher.c
+call#80.0 in internal event_handler_thread@event_handler.c
+call#80.1 in internal event_handler_thread@event_handler.c
+call#80.2 in internal event_handler_thread@event_handler.c
+call#80.0 in vh_fifo_queue_search
+call#80.0 in vh_fifo_queue_moveup
+call#80.0 in internal lavf_utils_probe@lavf_utils.c
+call#80.1 in internal lavf_utils_probe@lavf_utils.c
+call#80.0 in internal list_item_free@list.c
+call#80.0 in vh_list_foreach
+call#80.0 in vh_list_search
+call#80.0 in internal ondemand_thread@ondemand.c
+call#80.1 in internal ondemand_thread@ondemand.c
+call#80.2 in internal ondemand_thread@ondemand.c
+call#80.3 in internal ondemand_thread@ondemand.c
+call#80.0 in vh_stats_dump
+call#80.0 in internal grabber_thread@grabber.c
+call#80.1 in internal grabber_thread@grabber.c
+call#80.0 in vh_grabber_uninit
+call#80.0 in vh_grabber_init
+call#80.0 in internal grabber_register_childs@grabber.c
+call#80.0 in internal grabber_parse_list@grabber_utils.c
+call#80.0 in vh_grabber_parse_casting
+call#80.0 in vh_xml_get_prop_value_from_tree_by_attr
+call#80.1 in vh_xml_get_prop_value_from_tree_by_attr
+call#80.0 in vh_xml_search_str
+call#80.0 in vh_xml_search_int
+call#80.0 in vh_xml_search_year
+call#80.0 in vh_json_foreach
+call#80.0 in internal grabber_lastfm_get@grabber_lastfm.c
+call#80.0 in internal grabber_tvdb_get@grabber_tvdb.c
+call#80.1 in internal grabber_tvdb_get@grabber_tvdb.c
+call#80.0 in internal grabber_tvdb_search@grabber_tvdb.c
+call#80.0 in internal grabber_tvdb_parse_list@grabber_tvdb.c
+call#80.0 in internal grabber_tvdb_get_episode@grabber_tvdb.c
+call#80.0 in internal grabber_tvrage_get@grabber_tvrage.c
+call#80.1 in internal grabber_tvrage_get@grabber_tvrage.c
+call#80.2 in internal grabber_tvrage_get@grabber_tvrage.c

@@ -1,0 +1,3 @@
+call#80.0 in internal qcmp@hime-tsa2d32.c
+call#80.0 in internal qcmp_eq@hime-tsa2d32.c
+call#80.0 in internal qcmp_usecount@hime-tsa2d32.c

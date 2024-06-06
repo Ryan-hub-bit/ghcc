@@ -1,0 +1,34 @@
+call#80.0 in main
+call#80.0 in internal master_process_cycle@verben.c
+call#80.0 in internal spawn_process@verben.c
+call#80.0 in conf_block_foreach
+call#80.0 in conf_array_foreach
+call#80.0 in dlist_destroy
+call#80.0 in dlist_delete_node
+call#80.0 in dlist_dup
+call#80.0 in dlist_search_key
+call#80.0 in worker_process_cycle
+call#80.1 in worker_process_cycle
+call#80.2 in worker_process_cycle
+call#80.3 in worker_process_cycle
+call#80.0 in conn_process_cycle
+call#80.1 in conn_process_cycle
+call#80.0 in internal accept_common_handler@conn.c
+call#80.0 in internal close_client@conn.c
+call#80.0 in internal read_from_client@conn.c
+call#80.0 in ae_free_event_loop
+call#80.0 in ae_delete_time_event
+call#80.0 in ae_process_events
+call#80.1 in ae_process_events
+call#80.0 in internal process_time_events@ae.c
+call#80.0 in ae_main
+call#80.0 in hash_insert
+call#80.1 in hash_insert
+call#80.2 in hash_insert
+call#80.3 in hash_insert
+call#80.4 in hash_insert
+call#80.0 in hash_get_val
+call#80.0 in hash_delete
+call#80.1 in hash_delete
+call#80.2 in hash_delete
+call#80.0 in hash_foreach

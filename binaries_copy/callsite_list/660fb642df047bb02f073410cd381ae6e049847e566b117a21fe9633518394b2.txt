@@ -1,0 +1,9 @@
+call#80.0 in worldrenderInit
+call#80.1 in worldrenderInit
+call#80.2 in worldrenderInit
+call#80.3 in worldrenderInit
+call#80.4 in worldrenderInit
+call#80.5 in worldrenderInit
+call#80.0 in internal worldrenderDrawSzene@src/worldrender.c
+call#80.0 in chunkgenCreate
+call#80.0 in internal renderOnMouseHook@src/render.c

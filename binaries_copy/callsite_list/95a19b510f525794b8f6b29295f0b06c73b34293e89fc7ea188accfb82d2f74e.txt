@@ -1,0 +1,6 @@
+call#80.0 in ggggc_expandPoolList
+call#80.0 in GGC_MapGet
+call#80.1 in GGC_MapGet
+call#80.0 in GGC_MapPut
+call#80.1 in GGC_MapPut
+call#80.2 in GGC_MapPut

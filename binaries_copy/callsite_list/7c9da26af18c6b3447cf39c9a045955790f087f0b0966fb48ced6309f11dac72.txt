@@ -1,0 +1,6 @@
+call#80.0 in delay_output
+call#80.0 in tputs
+call#80.1 in tputs
+call#80.2 in tputs
+call#80.3 in tputs
+call#80.4 in tputs

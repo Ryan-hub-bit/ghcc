@@ -1,0 +1,2 @@
+call#80.0 in internal ts_getc@cst_tokenstream.c
+call#80.0 in ts_close

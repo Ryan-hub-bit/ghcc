@@ -1,0 +1,5 @@
+call#80.0 in internal help@v4l2loopback-ctl.c
+call#80.1 in internal help@v4l2loopback-ctl.c
+call#80.0 in internal usage_topic@v4l2loopback-ctl.c
+call#80.0 in internal called_deprecated@v4l2loopback-ctl.c
+call#80.1 in internal called_deprecated@v4l2loopback-ctl.c

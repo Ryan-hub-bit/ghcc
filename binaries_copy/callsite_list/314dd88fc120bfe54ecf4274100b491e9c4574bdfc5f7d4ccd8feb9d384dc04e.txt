@@ -1,0 +1,17 @@
+call#80.0 in inflateReset2
+call#80.0 in inflateInit2_
+call#80.1 in inflateInit2_
+call#80.0 in internal updatewindow@inflate.c
+call#80.0 in inflateEnd
+call#80.1 in inflateEnd
+call#80.0 in deflateInit2_
+call#80.1 in deflateInit2_
+call#80.2 in deflateInit2_
+call#80.3 in deflateInit2_
+call#80.4 in deflateInit2_
+call#80.0 in deflateEnd
+call#80.1 in deflateEnd
+call#80.2 in deflateEnd
+call#80.3 in deflateEnd
+call#80.4 in deflateEnd
+call#80.0 in deflate

@@ -1,0 +1,8 @@
+call#80.0 in vcard_reset
+call#80.0 in vcard_delete_applet
+call#80.0 in vcard_set_applet_private
+call#80.0 in vcard_free
+call#80.0 in vcard_get_atr
+call#80.0 in vcard_select_applet
+call#80.0 in vcard_process_applet_apdu
+call#80.0 in vreader_free

@@ -1,0 +1,8 @@
+call#80.0 in main
+call#80.1 in main
+call#80.0 in internal dump_to_file@cmd-d2f.c
+call#80.0 in internal cmd@cmd-md.c
+call#80.0 in internal mem_dump_mult_column@cmd-md.c
+call#80.0 in internal mem_dump_single_column@cmd-md.c
+call#80.0 in internal cmd@cmd-me.c
+call#80.1 in internal cmd@cmd-me.c

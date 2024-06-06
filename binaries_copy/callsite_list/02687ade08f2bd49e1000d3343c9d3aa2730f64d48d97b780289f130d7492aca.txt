@@ -1,0 +1,13 @@
+call#80.0 in internal html_handle_data@html.c
+call#80.1 in internal html_handle_data@html.c
+call#80.2 in internal html_handle_data@html.c
+call#80.0 in time_update
+call#80.0 in flow_inspect
+call#80.1 in flow_inspect
+call#80.0 in internal flow_free@flow.c
+call#80.0 in patn_sch
+call#80.0 in internal call_msg_end_handler@http.c
+call#80.0 in internal call_body_handler@http.c
+call#80.0 in internal call_header_field_handler@http.c
+call#80.0 in internal call_status_line_handler@http.c
+call#80.0 in internal call_request_line_handler@http.c

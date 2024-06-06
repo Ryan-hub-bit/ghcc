@@ -1,0 +1,5 @@
+call#80.1 in internal perform_charset_detection@test-chardetect.c
+call#80.3 in internal perform_charset_detection@test-chardetect.c
+call#80.5 in internal perform_charset_detection@test-chardetect.c
+call#80.7 in internal perform_charset_detection@test-chardetect.c
+call#80.9 in internal perform_charset_detection@test-chardetect.c

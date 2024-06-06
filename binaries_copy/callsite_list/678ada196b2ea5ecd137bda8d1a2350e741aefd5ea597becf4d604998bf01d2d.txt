@@ -1,0 +1,10 @@
+call#80.0 in statements_validate
+call#80.0 in statements_analyse
+call#80.1 in statements_analyse
+call#80.0 in statements_freeze
+call#80.0 in statements_get_binary
+call#80.1 in statements_get_binary
+call#80.0 in statements_fprint_asm
+call#80.1 in statements_fprint_asm
+call#80.2 in statements_fprint_asm
+call#80.0 in statements_free

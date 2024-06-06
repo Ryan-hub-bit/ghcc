@@ -1,0 +1,4 @@
+call#80.0 in internal possibly_signal_progress@libtrace/trace_parser.c
+call#80.0 in internal process_single_record@libtrace/trace_parser.c
+call#80.1 in internal process_single_record@libtrace/trace_parser.c
+call#80.0 in internal accumulate_metadata@libtrace/trace_parser.c

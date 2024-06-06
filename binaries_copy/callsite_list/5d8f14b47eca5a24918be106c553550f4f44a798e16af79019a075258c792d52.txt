@@ -1,0 +1,19 @@
+call#80.0 in main
+call#80.1 in main
+call#80.2 in main
+call#80.3 in main
+call#80.4 in main
+call#80.5 in main
+call#80.0 in internal NPI_LNX_IPC_ConnectionHandle@ipclib/server/npi_lnx_ipc.c
+call#80.1 in internal NPI_LNX_IPC_ConnectionHandle@ipclib/server/npi_lnx_ipc.c
+call#80.0 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.1 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.2 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.3 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.4 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.5 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.6 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.7 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.8 in internal npi_ServerCmdHandle@ipclib/server/npi_lnx_ipc.c
+call#80.0 in internal npi_parseframe@ipclib/server/npi_lnx_uart.c
+call#80.0 in internal npi_sendframe@ipclib/server/npi_lnx_uart.c

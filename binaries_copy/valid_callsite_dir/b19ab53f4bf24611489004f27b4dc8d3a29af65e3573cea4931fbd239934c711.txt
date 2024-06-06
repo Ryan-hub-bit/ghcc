@@ -1,0 +1,3 @@
+call#80.0 in internal run@tabbed.c
+call#80.0 in internal keypress@tabbed.c
+call#80.0 in internal xerror@tabbed.c

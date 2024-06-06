@@ -1,0 +1,5 @@
+call#80.0 in mdsl_destroy
+call#80.0 in mdsl_hb_wrapper
+call#80.0 in mdsl_ring_update
+call#80.0 in mdsl_addr_table_update
+call#80.0 in internal __serv_request@/usr/src/repo/mdsl/spool.c

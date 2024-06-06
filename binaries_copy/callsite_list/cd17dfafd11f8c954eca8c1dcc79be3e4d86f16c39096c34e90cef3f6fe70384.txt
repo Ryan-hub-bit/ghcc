@@ -1,0 +1,7 @@
+call#80.0 in keypress
+call#80.0 in arrange
+call#80.0 in buttonpress
+call#80.0 in movemouse
+call#80.0 in resizemouse
+call#80.0 in xerror
+call#80.0 in run

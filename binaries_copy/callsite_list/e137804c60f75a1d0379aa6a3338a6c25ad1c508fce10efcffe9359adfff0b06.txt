@@ -1,0 +1,16 @@
+call#80.0 in for_each_data_block
+call#80.1 in for_each_data_block
+call#80.0 in close_output_file
+call#80.1 in close_output_file
+call#80.2 in close_output_file
+call#80.0 in open_output_file
+call#80.0 in pad_output_file
+call#80.1 in pad_output_file
+call#80.0 in internal emit_skip_chunk@output_file.c
+call#80.0 in write_data_block
+call#80.1 in write_data_block
+call#80.0 in internal write_chunk_raw@output_file.c
+call#80.1 in internal write_chunk_raw@output_file.c
+call#80.2 in internal write_chunk_raw@output_file.c
+call#80.0 in write_data_file
+call#80.1 in write_data_file

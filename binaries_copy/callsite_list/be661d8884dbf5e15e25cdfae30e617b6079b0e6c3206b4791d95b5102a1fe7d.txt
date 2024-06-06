@@ -1,0 +1,5 @@
+call#80.0 in main
+call#80.0 in _insertc
+call#80.0 in _isnumber
+call#80.0 in jammermode
+call#80.1 in jammermode

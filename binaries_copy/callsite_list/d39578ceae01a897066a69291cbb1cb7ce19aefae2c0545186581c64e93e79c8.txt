@@ -1,0 +1,13 @@
+call#80.0 in internal ask_player@engine.c
+call#80.1 in internal ask_player@engine.c
+call#80.0 in phase_explore
+call#80.0 in internal send_choice@engine.c
+call#80.0 in internal wait_for_all@engine.c
+call#80.0 in phase_develop
+call#80.0 in phase_settle
+call#80.0 in phase_consume
+call#80.0 in phase_produce
+call#80.0 in internal rotate_players@engine.c
+call#80.0 in main
+call#80.1 in main
+call#80.2 in main

@@ -1,0 +1,2 @@
+call#80.0 in internal thread_func@listing_32-2.c
+call#80.1 in internal thread_func@listing_32-2.c

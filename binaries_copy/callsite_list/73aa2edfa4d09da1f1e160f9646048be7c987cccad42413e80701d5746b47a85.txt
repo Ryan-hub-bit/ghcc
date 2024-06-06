@@ -1,0 +1,10 @@
+call#80.0 in z80ex_dasm
+call#80.1 in z80ex_dasm
+call#80.2 in z80ex_dasm
+call#80.3 in z80ex_dasm
+call#80.4 in z80ex_dasm
+call#80.5 in z80ex_dasm
+call#80.6 in z80ex_dasm
+call#80.7 in z80ex_dasm
+call#80.8 in z80ex_dasm
+call#80.9 in z80ex_dasm

@@ -1,0 +1,2 @@
+call#80.0 in SPUwriteRegister
+call#80.1 in SPUwriteRegister

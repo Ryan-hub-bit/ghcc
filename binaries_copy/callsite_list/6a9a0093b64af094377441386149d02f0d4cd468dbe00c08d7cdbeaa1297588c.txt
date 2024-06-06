@@ -1,0 +1,3 @@
+call#80.0 in internal xerror@larry.c
+call#80.0 in internal start@larry.c
+call#80.0 in internal keypress@larry.c
