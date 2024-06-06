@@ -27,6 +27,8 @@ class Arguments(argtyped.Arguments):
     clone_folder: str = "repos/"  # where cloned repositories are stored (temporarily)
     binary_folder: str = "binaries/"  # where compiled binaries are stored
     archive_folder: str = "archives/"  # where archived repositories are stored
+    all_binaries : str = "/home/isec/Desktop/ghcc_latest/ghcc/binaries/binary_list"
+    all_jsons : str = "/home/isec/Desktop/ghcc_latest/ghcc/binaries/json_list"
     n_procs: int = 0  # 0 for single-threaded execution
     log_file: str = "log.txt"
     clone_timeout: Optional[int] = 600  # wait up to 10 minutes
@@ -218,6 +220,7 @@ def clone_and_compile(repo_info: RepoInfo, clone_folder: str, binary_folder: str
 
         # Stage 2: Finding Makefiles.
         makefile_dirs = ghcc.find_makefiles(repo_path)
+        #flutes.log(f"makefile_dir: {makefile_dirs}")
         if len(makefile_dirs) == 0:
             # Repo has no Makefiles, delete.
             shutil.rmtree(repo_path)
@@ -227,19 +230,32 @@ def clone_and_compile(repo_info: RepoInfo, clone_folder: str, binary_folder: str
             pass
 
         # Stage 3: Compile each Makefile.
-        repo_binary_dir = os.path.join(binary_folder, repo_full_name)
+        # repo_binary_dir = os.path.join(binary_folder, repo_full_name)
+        repo_binary_dir = binary_folder
         if not os.path.exists(repo_binary_dir):
             os.makedirs(repo_binary_dir)
+        all_binaries : str = "binaries/binary_list"
+        all_jsons : str = "binaries/json_list"
+        all_callsites: str = "binaries/callsite_list"
+        if not os.path.exists(all_binaries):
+            os.makedirs(all_binaries)
+        if not os.path.exists(all_jsons):
+            os.makedirs(all_jsons)
+        if not os.path.exists(all_callsites):
+            os.makedirs(all_callsites)
         flutes.log(f"Starting compilation for {repo_full_name}...")
 
         if docker_batch_compile:
+            #flutes.log(f"docker_batch_compile: {docker_batch_compile}")
             makefiles = ghcc.docker_batch_compile(
                 repo_binary_dir, repo_path, compile_timeout, record_libraries, gcc_override_flags,
                 user_id=(repo_info.idx % 10000) + 30000,  # user IDs 30000 ~ 39999
                 exception_log_fn=functools.partial(exception_handler, repo_info=repo_info))
+            #flutes.log(f"makefile: {makefiles}")
         else:
             makefiles = list(ghcc.compile_and_move(
                 repo_binary_dir, repo_path, makefile_dirs, compile_timeout, record_libraries, gcc_override_flags))
+            #flutes.log(f"makefile: {makefiles}")
         num_succeeded = sum(makefile["success"] for makefile in makefiles)
         if record_libraries:
             library_log_path = os.path.join(repo_binary_dir, "libraries.txt")
@@ -304,6 +320,7 @@ def iter_repos(db: ghcc.RepoDB, repo_list_path: str, max_count: Optional[int] = 
             if url.endswith(".git"):
                 url = url[:-len(".git")]
             repo_owner, repo_name = url.split("/")[-2:]
+            #flutes.log(f"repo_owner: {repo_owner}, repo_name: {repo_name}")
             # db_result = db.get(repo_owner, repo_name)
             db_result = db_entries.get((repo_owner, repo_name), None)
             yield RepoInfo(index, repo_owner, repo_name, db_result)
@@ -414,6 +431,10 @@ def main() -> None:
         repo_count = 0
         meta_info = MetaInfo()
         for result in pool.imap_unordered(pipeline_fn, iterator):
+<<<<<<< HEAD
+=======
+            #flutes.log(f"result: {result}")
+>>>>>>> experiment5
             repo_count += 1
             if repo_count % 100 == 0:
                 flutes.log(f"Processed {repo_count} repositories", force_console=True)

@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in BN_is_prime_fasttest":[],"call#80.1 in BN_is_prime_fasttest":[]},"tg_targets_argnum":{"call#80.0 in BN_is_prime_fasttest":[],"call#80.1 in BN_is_prime_fasttest":[]},"tg_targets_hash":{"call#80.0 in BN_is_prime_fasttest":["load","load","call","br"],"call#80.1 in BN_is_prime_fasttest":["load","load","load","call","br"]}}

@@ -3,3 +3,5 @@
 !scripts/
 !*.py
 !requirements.txt
+!llvm-typro/
+

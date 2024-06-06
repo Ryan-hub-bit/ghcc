@@ -1,0 +1,6 @@
+call#80.0 in execute_one_step
+call#80.0 in Hash_Get
+call#80.0 in Hash_Remove
+call#80.0 in Hash_Iterator_Search
+call#80.0 in internal delete_all_items@src/list.c
+call#80.0 in PnFunction_ExecuteByFuncObject

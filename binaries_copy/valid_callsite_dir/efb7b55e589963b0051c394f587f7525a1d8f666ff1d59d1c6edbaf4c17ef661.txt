@@ -1,0 +1,5 @@
+call#80.0 in internal ktf_worker@kthread.c
+call#80.1 in internal ktf_worker@kthread.c
+call#80.0 in internal ktp_worker@kthread.c
+call#80.0 in ksw_align2
+call#80.1 in ksw_align2

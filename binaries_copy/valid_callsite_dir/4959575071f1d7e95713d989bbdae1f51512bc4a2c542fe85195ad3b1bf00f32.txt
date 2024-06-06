@@ -1,0 +1,8 @@
+call#80.0 in CList_clear
+call#80.0 in CList_foreach
+call#80.0 in CList_ffind_after
+call#80.0 in CList_ffind_before
+call#80.0 in CList_pop_front
+call#80.0 in CList_pop_back
+call#80.0 in CList_pop
+call#80.0 in CList_popn

@@ -1,0 +1,6 @@
+call#80.0 in minheap_push
+call#80.0 in internal shiftdown@minheap.c
+call#80.1 in internal shiftdown@minheap.c
+call#80.0 in minheap_pop
+call#80.0 in internal shiftup@minheap.c
+call#80.1 in internal shiftup@minheap.c

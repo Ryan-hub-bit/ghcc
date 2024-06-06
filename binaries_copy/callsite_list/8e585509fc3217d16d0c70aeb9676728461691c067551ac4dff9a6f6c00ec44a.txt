@@ -1,0 +1,6 @@
+call#80.0 in img_flip
+call#80.1 in img_flip
+call#80.0 in check_timeouts
+call#80.0 in on_keypress
+call#80.0 in on_buttonpress
+call#80.0 in run

@@ -1,0 +1,30 @@
+call#80.0 in btree_add
+call#80.1 in btree_add
+call#80.2 in btree_add
+call#80.3 in btree_add
+call#80.4 in btree_add
+call#80.5 in btree_add
+call#80.6 in btree_add
+call#80.7 in btree_add
+call#80.8 in btree_add
+call#80.9 in btree_add
+call#80.10 in btree_add
+call#80.11 in btree_add
+call#80.0 in internal __btree_search@btree.c
+call#80.0 in internal __btree_move@btree.c
+call#80.1 in internal __btree_move@btree.c
+call#80.0 in btree_remove
+call#80.1 in btree_remove
+call#80.2 in btree_remove
+call#80.3 in btree_remove
+call#80.4 in btree_remove
+call#80.5 in btree_remove
+call#80.6 in btree_remove
+call#80.7 in btree_remove
+call#80.8 in btree_remove
+call#80.9 in btree_remove
+call#80.10 in btree_remove
+call#80.11 in btree_remove
+call#80.12 in btree_remove
+call#80.0 in __btree_traverse_prefix
+call#80.0 in __btree_traverse_postfix

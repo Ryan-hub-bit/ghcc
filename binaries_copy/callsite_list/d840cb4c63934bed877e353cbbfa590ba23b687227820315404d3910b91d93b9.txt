@@ -1,0 +1,4 @@
+call#80.0 in main
+call#80.1 in main
+call#80.0 in internal tget_common@misc/btpd_if.c
+call#80.1 in internal tget_common@misc/btpd_if.c

@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in sndgen":["sndgen_beat","sndgen_sin","sndgen_two"]},"tg_targets_argnum":{"call#80.0 in sndgen":["sndgen_beat","sndgen_sin","sndgen_two"]},"tg_targets_hash":{"call#80.0 in sndgen":["load","load","call","fmul","store","load","fptosi","ashr","trunc","load","load","zext","getelementptr","store","load","load","fadd","store","br"]}}

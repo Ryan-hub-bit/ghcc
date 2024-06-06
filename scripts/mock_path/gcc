@@ -68,14 +68,21 @@ def main():
         known_args.append("-c")
 
     try:
-        gcc = "gcc"  # "gcc-4.7"
+        my_env = os.environ.copy()
+        my_env['CC'] = '/typro/build/bin/clang'
+        my_env['CXX'] = '/typro/build/bin/clang++'
+        my_env['TG_CFI_OUTPUT'] = 'auto'
+        my_env['TG_IFCC_OUTPUT'] = 'auto'
+        my_env['TG_ENFORCE'] = '0'
+        gcc = "clang"  # "gcc-4.7"
         # When multiple -O options are specified, the last one takes precedence.
         gcc_args = [gcc] + known_args + unknown_args + ["-o", out_file, "-O0", "-g"] + override_flags
         # Add linker options after files that use them.
         gcc_args.extend([f"-l{lib}" for lib in (args.l or [])])
         sys.stderr.write("Mock GCC: " + ' '.join(gcc_args) + "\n")
+        sys.stderr.write("env: " + my_env['TG_CFI_OUTPUT'] + "\n")
         # Redirecting to a pipe could prevent GCC producing colored output.
-        process = subprocess.Popen(gcc_args, stdout=sys.stdout, stderr=sys.stderr, env=env)
+        process = subprocess.Popen(gcc_args, stdout=sys.stdout, stderr=sys.stderr, env=my_env)
         process.wait()
         if process.returncode != 0:
             write_libraries()

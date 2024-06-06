@@ -1,0 +1,20 @@
+call#80.0 in dlevmar_der
+call#80.1 in dlevmar_der
+call#80.2 in dlevmar_der
+call#80.3 in dlevmar_der
+call#80.0 in dlevmar_dif
+call#80.1 in dlevmar_dif
+call#80.2 in dlevmar_dif
+call#80.0 in dlevmar_fdif_forw_jac_approx
+call#80.0 in dlevmar_fdif_cent_jac_approx
+call#80.1 in dlevmar_fdif_cent_jac_approx
+call#80.0 in dlevmar_bc_der
+call#80.1 in dlevmar_bc_der
+call#80.2 in dlevmar_bc_der
+call#80.3 in dlevmar_bc_der
+call#80.4 in dlevmar_bc_der
+call#80.5 in dlevmar_bc_der
+call#80.6 in dlevmar_bc_der
+call#80.7 in dlevmar_bc_der
+call#80.0 in internal dlnsrch@lmbc.c
+call#80.1 in internal dlnsrch@lmbc.c

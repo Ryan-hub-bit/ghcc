@@ -1,0 +1,2 @@
+call#80.0 in virtqueue_add_buf_gfp
+call#80.0 in virtqueue_kick

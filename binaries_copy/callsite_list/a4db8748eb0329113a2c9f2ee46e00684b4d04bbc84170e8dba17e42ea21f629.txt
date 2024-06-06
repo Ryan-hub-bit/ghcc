@@ -1,0 +1,6 @@
+call#80.0 in list_add
+call#80.1 in list_add
+call#80.2 in list_add
+call#80.0 in list_get_index
+call#80.0 in list_free
+call#80.0 in list_delete_at

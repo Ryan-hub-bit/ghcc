@@ -1,0 +1,2 @@
+call#80.0 in m68k_execute
+call#80.0 in m68k_disassemble

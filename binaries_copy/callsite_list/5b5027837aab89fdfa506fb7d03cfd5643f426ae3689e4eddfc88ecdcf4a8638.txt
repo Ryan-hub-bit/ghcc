@@ -1,0 +1,2 @@
+call#80.0 in internal _traverse@src/daemon/index.c
+call#80.0 in handle_inotify_events

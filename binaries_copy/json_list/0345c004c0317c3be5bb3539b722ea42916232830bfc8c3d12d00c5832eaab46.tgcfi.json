@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in main":["dump_byte","dump_half","dump_word"]},"tg_targets_argnum":{"call#80.0 in main":["dump_byte","dump_half","dump_word"]},"tg_targets_hash":{"call#80.0 in main":["load","load","load","sub","getelementptr","store","load","load","load","load","call","load","load","call","load","call","store","br"]}}

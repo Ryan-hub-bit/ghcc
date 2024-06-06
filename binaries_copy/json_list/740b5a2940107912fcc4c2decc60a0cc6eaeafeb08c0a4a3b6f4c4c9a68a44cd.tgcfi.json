@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in list_search":["cmp_name"]},"tg_targets_argnum":{"call#80.0 in list_search":["cmp_name"]},"tg_targets_hash":{"call#80.0 in list_search":["load","load","load","call","icmp","br"]}}

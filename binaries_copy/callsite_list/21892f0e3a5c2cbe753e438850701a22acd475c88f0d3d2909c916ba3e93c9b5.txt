@@ -1,0 +1,9 @@
+call#80.0 in vm_init
+call#80.0 in vm_run
+call#80.1 in vm_run
+call#80.0 in clipboard_init
+call#80.1 in clipboard_init
+call#80.0 in clipboard_load
+call#80.1 in clipboard_load
+call#80.0 in clipboard_store
+call#80.1 in clipboard_store

@@ -1,0 +1,7 @@
+call#80.0 in internal s_mp_exptmod@bignum.c
+call#80.1 in internal s_mp_exptmod@bignum.c
+call#80.2 in internal s_mp_exptmod@bignum.c
+call#80.3 in internal s_mp_exptmod@bignum.c
+call#80.4 in internal s_mp_exptmod@bignum.c
+call#80.5 in internal s_mp_exptmod@bignum.c
+call#80.6 in internal s_mp_exptmod@bignum.c

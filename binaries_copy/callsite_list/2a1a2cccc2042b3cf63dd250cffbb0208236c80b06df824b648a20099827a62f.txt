@@ -1,0 +1,2 @@
+call#80.0 in internal typelist@../progs/toe.c
+call#80.0 in _nc_read_entry_source

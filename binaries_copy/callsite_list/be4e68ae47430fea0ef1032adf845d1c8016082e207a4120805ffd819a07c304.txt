@@ -1,0 +1,9 @@
+call#80.0 in internal outputchildren@src/comment.c
+call#80.0 in internal parsecomment@src/comment.c
+call#80.1 in internal parsecomment@src/comment.c
+call#80.0 in internal endcnode@src/comment.c
+call#80.0 in internal startpara@src/comment.c
+call#80.0 in internal dox_throw@src/comment.c
+call#80.0 in internal dox_param@src/comment.c
+call#80.0 in internal starthtmlcnode@src/comment.c
+call#80.0 in outputdescriptive

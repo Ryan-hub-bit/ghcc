@@ -1,0 +1,2 @@
+call#80.0 in BN_is_prime_fasttest
+call#80.1 in BN_is_prime_fasttest

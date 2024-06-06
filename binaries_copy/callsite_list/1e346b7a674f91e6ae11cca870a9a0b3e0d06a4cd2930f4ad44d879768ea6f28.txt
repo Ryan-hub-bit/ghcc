@@ -1,0 +1,29 @@
+call#80.0 in internal transfer_routine_z@asm.c
+call#80.1 in internal transfer_routine_z@asm.c
+call#80.2 in internal transfer_routine_z@asm.c
+call#80.3 in internal transfer_routine_z@asm.c
+call#80.4 in internal transfer_routine_z@asm.c
+call#80.5 in internal transfer_routine_z@asm.c
+call#80.6 in internal transfer_routine_z@asm.c
+call#80.0 in internal transfer_routine_g@asm.c
+call#80.1 in internal transfer_routine_g@asm.c
+call#80.0 in get_next_token
+call#80.1 in get_next_token
+call#80.2 in get_next_token
+call#80.3 in get_next_token
+call#80.4 in get_next_token
+call#80.5 in get_next_token
+call#80.6 in get_next_token
+call#80.7 in get_next_token
+call#80.8 in get_next_token
+call#80.9 in get_next_token
+call#80.10 in get_next_token
+call#80.11 in get_next_token
+call#80.12 in get_next_token
+call#80.13 in get_next_token
+call#80.14 in get_next_token
+call#80.15 in get_next_token
+call#80.16 in get_next_token
+call#80.17 in get_next_token
+call#80.18 in get_next_token
+call#80.19 in get_next_token

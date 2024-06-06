@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in internal _stresser_unit@stresser.c":["flush","hangup"]},"tg_targets_argnum":{"call#80.0 in internal _stresser_unit@stresser.c":["flush","hangup"]},"tg_targets_hash":{"call#80.0 in internal _stresser_unit@stresser.c":["load","getelementptr","load","getelementptr","load","load","getelementptr","load","call","load","getelementptr","store","store","br"]}}

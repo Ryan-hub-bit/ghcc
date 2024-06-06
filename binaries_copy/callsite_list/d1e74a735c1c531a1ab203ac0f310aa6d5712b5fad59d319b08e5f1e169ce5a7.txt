@@ -1,0 +1,6 @@
+call#80.0 in dht_search
+call#80.1 in dht_search
+call#80.0 in internal search_step@dht.c
+call#80.0 in dht_periodic
+call#80.1 in dht_periodic
+call#80.0 in internal expire_searches@dht.c

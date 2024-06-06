@@ -1,0 +1,7 @@
+call#80.0 in internal merge@./tool/lemon.c
+call#80.1 in internal merge@./tool/lemon.c
+call#80.0 in Configtable_clear
+call#80.0 in internal handleflags@./tool/lemon.c
+call#80.0 in internal handleswitch@./tool/lemon.c
+call#80.1 in internal handleswitch@./tool/lemon.c
+call#80.2 in internal handleswitch@./tool/lemon.c

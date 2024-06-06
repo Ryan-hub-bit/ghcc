@@ -1,0 +1,3 @@
+call#80.0 in blockread
+call#80.0 in flush_list
+call#80.0 in tux_readdir

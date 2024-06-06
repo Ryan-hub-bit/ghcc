@@ -1,0 +1,14 @@
+call#80.0 in internal _print@libcli.c
+call#80.1 in internal _print@libcli.c
+call#80.0 in internal cli_int_execute_pipeline@libcli.c
+call#80.1 in internal cli_int_execute_pipeline@libcli.c
+call#80.2 in internal cli_int_execute_pipeline@libcli.c
+call#80.0 in internal cli_int_parse_optargs@libcli.c
+call#80.1 in internal cli_int_parse_optargs@libcli.c
+call#80.2 in internal cli_int_parse_optargs@libcli.c
+call#80.3 in internal cli_int_parse_optargs@libcli.c
+call#80.0 in internal cli_get_optarg_comphelp@libcli.c
+call#80.0 in cli_loop
+call#80.1 in cli_loop
+call#80.2 in cli_loop
+call#80.3 in cli_loop

@@ -1,0 +1,5 @@
+call#80.0 in main
+call#80.0 in internal _seq_read_unknown_gz_buf@seq_cmdline.c
+call#80.0 in internal _seq_read_unknown_f_buf@seq_cmdline.c
+call#80.0 in internal _seq_read_unknown_gz@seq_cmdline.c
+call#80.0 in internal _seq_read_unknown_f@seq_cmdline.c

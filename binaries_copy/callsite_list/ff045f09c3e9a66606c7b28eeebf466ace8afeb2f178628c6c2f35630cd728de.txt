@@ -1,0 +1,6 @@
+call#80.0 in tcpip_output
+call#80.0 in internal call_process@../../core/sys/process.c
+call#80.0 in internal exit_process@../../core/sys/process.c
+call#80.0 in internal handle_script@../../apps/webserver/httpd.c
+call#80.0 in psock_generator_send
+call#80.0 in internal process_thread_ctimer_process@../../core/net/rime/ctimer.c

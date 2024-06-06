@@ -1,0 +1,20 @@
+call#80.0 in main
+call#80.1 in main
+call#80.2 in main
+call#80.3 in main
+call#80.4 in main
+call#80.5 in main
+call#80.6 in main
+call#80.0 in internal process_desc@signpost.c
+call#80.1 in internal process_desc@signpost.c
+call#80.2 in internal process_desc@signpost.c
+call#80.3 in internal process_desc@signpost.c
+call#80.4 in internal process_desc@signpost.c
+call#80.5 in internal process_desc@signpost.c
+call#80.6 in internal process_desc@signpost.c
+call#80.7 in internal process_desc@signpost.c
+call#80.8 in internal process_desc@signpost.c
+call#80.9 in internal process_desc@signpost.c
+call#80.0 in internal start_soak@signpost.c
+call#80.1 in internal start_soak@signpost.c
+call#80.2 in internal start_soak@signpost.c

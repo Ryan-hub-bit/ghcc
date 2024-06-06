@@ -1,0 +1,4 @@
+call#80.0 in blockread
+call#80.0 in flush_list
+call#80.0 in update_bitmap
+call#80.1 in update_bitmap

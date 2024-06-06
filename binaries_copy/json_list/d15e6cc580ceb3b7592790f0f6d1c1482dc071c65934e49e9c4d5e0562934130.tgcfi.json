@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in main":["init_pmus"]},"tg_targets_argnum":{"call#80.0 in main":["init_pmus"]},"tg_targets_hash":{"call#80.0 in main":["call","store","call","store","load","call","call","bitcast","store","load","sext","load","mul","sext","call","store","load","icmp","br"]}}

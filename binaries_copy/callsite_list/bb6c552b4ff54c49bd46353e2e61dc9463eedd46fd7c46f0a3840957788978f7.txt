@@ -1,0 +1,2 @@
+call#80.1 in main
+call#80.0 in open_random_event

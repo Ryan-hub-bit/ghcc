@@ -1,0 +1,22 @@
+call#80.0 in internal processFiles@trotTestDecodingEncoding.c
+call#80.0 in testListFunctions
+call#80.1 in testListFunctions
+call#80.2 in testListFunctions
+call#80.3 in testListFunctions
+call#80.4 in testListFunctions
+call#80.5 in testListFunctions
+call#80.6 in testListFunctions
+call#80.7 in testListFunctions
+call#80.8 in testListFunctions
+call#80.9 in testListFunctions
+call#80.10 in testListFunctions
+call#80.11 in testListFunctions
+call#80.12 in testListFunctions
+call#80.13 in testListFunctions
+call#80.14 in testListFunctions
+call#80.15 in testListFunctions
+call#80.16 in testListFunctions
+call#80.17 in testListFunctions
+call#80.18 in testListFunctions
+call#80.19 in testListFunctions
+call#80.0 in testMemory

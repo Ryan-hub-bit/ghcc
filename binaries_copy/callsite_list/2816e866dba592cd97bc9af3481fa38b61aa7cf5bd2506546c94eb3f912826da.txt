@@ -1,0 +1,2 @@
+call#80.0 in internal term_get_result@src/termtree.c
+call#80.0 in internal term_varfuncid_strcmp_pass@src/termtree.c

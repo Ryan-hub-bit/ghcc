@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in _iscsi_log":[]},"tg_targets_argnum":{"call#80.0 in _iscsi_log":[]},"tg_targets_hash":{"call#80.0 in _iscsi_log":["getelementptr","bitcast","call","load","getelementptr","bitcast","load","load","load","load","load","load","load","getelementptr","call","getelementptr","bitcast","call","br"]}}

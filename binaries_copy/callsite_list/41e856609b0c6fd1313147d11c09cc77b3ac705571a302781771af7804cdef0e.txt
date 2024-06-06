@@ -1,0 +1,2 @@
+call#80.0 in internal setup_crypto@mhvtl_io.c
+call#80.0 in internal write_tape@tape_util.c

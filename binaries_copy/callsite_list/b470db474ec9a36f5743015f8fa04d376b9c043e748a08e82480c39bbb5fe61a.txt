@@ -1,0 +1,10 @@
+call#80.0 in unpack_data
+call#80.0 in internal write_dns@iodined.c
+call#80.1 in internal write_dns@iodined.c
+call#80.2 in internal write_dns@iodined.c
+call#80.3 in internal write_dns@iodined.c
+call#80.0 in internal save_to_qmem_pingordata@iodined.c
+call#80.0 in internal write_dns_nameenc@iodined.c
+call#80.1 in internal write_dns_nameenc@iodined.c
+call#80.2 in internal write_dns_nameenc@iodined.c
+call#80.3 in internal write_dns_nameenc@iodined.c

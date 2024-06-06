@@ -1,0 +1,2 @@
+call#80.0 in internal serial_driver_open@serialoutputdriver.c
+call#80.1 in internal serial_driver_open@serialoutputdriver.c

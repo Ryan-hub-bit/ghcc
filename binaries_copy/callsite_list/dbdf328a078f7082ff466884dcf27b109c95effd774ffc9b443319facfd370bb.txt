@@ -1,0 +1,17 @@
+call#80.0 in _bind
+call#80.0 in vtable_lookup
+call#80.0 in init
+call#80.1 in init
+call#80.2 in init
+call#80.3 in init
+call#80.4 in init
+call#80.5 in init
+call#80.0 in tak
+call#80.1 in tak
+call#80.2 in tak
+call#80.3 in tak
+call#80.0 in main
+call#80.1 in main
+call#80.2 in main
+call#80.3 in main
+call#80.4 in main

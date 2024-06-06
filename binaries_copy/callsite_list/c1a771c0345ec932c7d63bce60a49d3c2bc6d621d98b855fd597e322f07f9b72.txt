@@ -1,0 +1,7 @@
+call#80.0 in internal _msp_state_idle@msp.c
+call#80.0 in internal _msp_state_hdr_start@msp.c
+call#80.0 in internal _msp_state_m@msp.c
+call#80.0 in internal _msp_state_checksum@msp.c
+call#80.1 in internal _msp_state_checksum@msp.c
+call#80.0 in internal _msp_read_status@msp.c
+call#80.0 in internal _msp_read_rc@msp.c

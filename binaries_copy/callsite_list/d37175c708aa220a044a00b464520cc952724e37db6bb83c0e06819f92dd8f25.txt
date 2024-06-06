@@ -1,0 +1,8 @@
+call#80.0 in QSort
+call#80.1 in QSort
+call#80.2 in QSort
+call#80.3 in QSort
+call#80.4 in QSort
+call#80.5 in QSort
+call#80.6 in QSort
+call#80.7 in QSort

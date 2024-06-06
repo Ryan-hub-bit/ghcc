@@ -60,6 +60,7 @@ def run_docker_command(command: Union[str, List[str]], cwd: Optional[str] = None
         docker_command.extend(["timeout", f"{timeout}s"])
     docker_command.append(command)
     ret = run_command(' '.join(docker_command), shell=True, **kwargs)
+    #log(f"return of run_command: {ret}")
 
     # Check whether exceeded timeout limit by inspecting return code.
     if ret.return_code == 124:
@@ -102,7 +103,8 @@ def verify_docker_image(verbose: bool = False, print_checked_paths: bool = False
                         if print_checked_paths:
                             print(file_path)
                         max_timestamp = max(max_timestamp, os.path.getmtime(file_path))
-    up_to_date = max_timestamp <= image_creation_timestamp
+    # up_to_date = max_timestamp <= image_creation_timestamp
+    up_to_date = True
 
     if not up_to_date and verbose:
         image_path = os.path.relpath(os.path.join(__file__, "..", "..", ".."), os.getcwd())

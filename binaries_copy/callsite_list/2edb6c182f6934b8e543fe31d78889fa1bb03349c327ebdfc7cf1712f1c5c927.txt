@@ -1,0 +1,9 @@
+call#80.0 in _msidb_hash_table_insert_replace
+call#80.1 in _msidb_hash_table_insert_replace
+call#80.2 in _msidb_hash_table_insert_replace
+call#80.3 in _msidb_hash_table_insert_replace
+call#80.0 in internal do_rehash@ghashtable.c
+call#80.0 in _msidb_hash_table_lookup_extended
+call#80.1 in _msidb_hash_table_lookup_extended
+call#80.0 in _msidb_hash_table_destroy
+call#80.1 in _msidb_hash_table_destroy

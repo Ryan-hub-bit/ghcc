@@ -1,0 +1,6 @@
+call#80.0 in build_hostname
+call#80.0 in unpack_data
+call#80.0 in internal dns_namedec@client.c
+call#80.1 in internal dns_namedec@client.c
+call#80.2 in internal dns_namedec@client.c
+call#80.3 in internal dns_namedec@client.c

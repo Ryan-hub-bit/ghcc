@@ -1,0 +1,7 @@
+call#80.0 in CL_ParseSnapshot
+call#80.1 in CL_ParseSnapshot
+call#80.0 in CL_ParseGamestate
+call#80.1 in CL_ParseGamestate
+call#80.0 in CL_ParseCommandString
+call#80.0 in freeDemoPlugin
+call#80.1 in demoPluginDynamicLoad

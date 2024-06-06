@@ -1,0 +1,7 @@
+call#80.0 in internal run@dwm-mk.c
+call#80.0 in internal xerror@dwm-mk.c
+call#80.0 in internal arrangemon@dwm-mk.c
+call#80.0 in internal movemouse@dwm-mk.c
+call#80.0 in internal resizemouse@dwm-mk.c
+call#80.0 in internal keypress@dwm-mk.c
+call#80.0 in internal buttonpress@dwm-mk.c

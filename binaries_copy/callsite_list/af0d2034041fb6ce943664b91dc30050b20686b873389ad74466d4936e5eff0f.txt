@@ -1,0 +1,12 @@
+call#80.0 in client_close
+call#80.0 in client_process
+call#80.1 in client_process
+call#80.2 in client_process
+call#80.3 in client_process
+call#80.0 in internal find_protocol@src/client.c
+call#80.0 in config_set
+call#80.0 in library_iterate_files_by_directory
+call#80.0 in library_iterate_directories
+call#80.0 in library_iterate_images_by_album
+call#80.0 in internal call_method@src/protocol_http.c
+call#80.0 in internal thread_func@src/task.c

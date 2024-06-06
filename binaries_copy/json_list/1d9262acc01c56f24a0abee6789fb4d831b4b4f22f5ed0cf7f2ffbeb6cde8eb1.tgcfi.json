@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.1 in close":[],"call#80.1 in fclose":[]},"tg_targets_argnum":{"call#80.1 in close":[],"call#80.1 in fclose":[]},"tg_targets_hash":{"call#80.1 in close":["call","load","load","call","store","call","load","ret"],"call#80.1 in fclose":["call","load","load","call","store","call","load","ret"]}}

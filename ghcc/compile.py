@@ -8,7 +8,7 @@ from enum import Enum, auto
 from typing import Callable, Dict, Iterator, List, NamedTuple, Optional
 
 from flutes.run import run_command
-
+from flutes.log import log
 from .database import RepoDB
 from .repo import clean
 from .utils.docker import run_docker_command
@@ -131,16 +131,23 @@ def _make_skeleton(directory: str, timeout: Optional[float] = None,
         # Use Git to find all unversioned files -- these would be the products of compilation.
         output = run_command(["git", "ls-files", "--others"], cwd=directory,
                              timeout=timeout, return_output=True).captured_output
+        #log(f"output: {output}")
         assert output is not None
         diff_files = [
             # files containing escape characters are in quotes
             file if file[0] != '"' else file[1:-1]
             for file in output.decode('unicode_escape').split("\n") if file]  # file names could contain spaces
+        #log(f"diff_file: {diff_files}")
 
         # Inspect each file and find ELF files.
         for file in diff_files:
-            if check_file_fn(directory, file):
+            if file.endswith(".tgcfi.json"):
                 result.elf_files.append(file)
+            elif file.endswith(".txt"):
+                result.elf_files.append(file)
+            elif check_file_fn(directory, file):
+                result.elf_files.append(file)
+        log(f" 1- result.elf_files:{result.elf_files}")
     except subprocess.TimeoutExpired as e:
         return _create_result(elf_files=result.elf_files, error_type=CompileErrorType.Timeout, captured_output=e.output)
     except subprocess.CalledProcessError as e:
@@ -308,11 +315,49 @@ def compile_and_move(repo_binary_dir: str, repo_path: str, makefile_dirs: List[s
         # Successful compilations might not generate binaries, while failed compilations may also yield binaries.
         if len(compile_result.elf_files) > 0 or compile_result.success:
             hashes: List[str] = []
+            #log(f"elf_files: {compile_result.elf_files}")
+            json_files = []
+            callsite_files = []
+            all_binaries = os.path.join(repo_binary_dir, "binary_list")
+            all_jsons = os.path.join(repo_binary_dir, "json_list")
+            #callsite content
+            all_callistes = os.path.join(repo_binary_dir,"callsite_list")
             for path in compile_result.elf_files:
+                #log(f"path:{path}")
+                #log(f"type(path) :{type(path)}")
+                if path.endswith(".tgcfi.json"):
+                    continue
+                if path.endswith(".txt"):
+                    continue
                 signature = hash_fn(make_dir, path)
                 hashes.append(signature)
                 full_path = os.path.join(make_dir, path)
-                shutil.move(full_path, os.path.join(repo_binary_dir, signature))
+                json_path = full_path + ".tgcfi.json"
+                txt_path = full_path + ".txt"
+                signature_path = os.path.join(make_dir,signature + ".tgcfi.json")
+                callsite_path = os.path.join(make_dir, signature + ".txt")
+                # example  flutes.run_command(['cp', file_path, stripped.name])
+                # run_command(['mv',json_path, signature_path])
+                shutil.move(json_path,signature_path)
+                shutil.move(txt_path,callsite_path)
+                json_files.append(signature_path)
+                callsite_files.append(callsite_path)
+                # shutil.move(full_path, os.path.join(repo_binary_dir, signature))
+                #shutil.move(full_path, os.path.join(repo_binary_dir, path))
+                shutil.move(full_path, os.path.join(all_binaries, signature))
+                change_log = os.path.join(repo_binary_dir, "changelog.txt")
+                with open(change_log, 'a') as f:
+                    content = f"{full_path} -> {signature} \n"
+                    f.write(content)
+            #log(f"json_file: {json_files}")
+            for json_file in json_files:
+                filename = json_file.split("/")[-1]
+                #log(f"filename:{filename}")
+                shutil.move(json_file,os.path.join(all_jsons, filename))
+            for callsite_file in callsite_files:
+                filename = callsite_file.split("/")[-1]
+                shutil.move(callsite_file, os.path.join(all_callistes, filename))
+
             yield {
                 "directory": make_dir,
                 "success": compile_result.success,

@@ -1,0 +1,1 @@
+{"tg_targets":{"call#80.0 in tinfl_decompress_mem_to_callback":["my_callback"]},"tg_targets_argnum":{"call#80.0 in tinfl_decompress_mem_to_callback":["my_callback"]},"tg_targets_hash":{"call#80.0 in tinfl_decompress_mem_to_callback":["load","load","load","getelementptr","load","trunc","load","call","icmp","br"]}}
