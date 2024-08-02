@@ -27,8 +27,8 @@ class Arguments(argtyped.Arguments):
     clone_folder: str = "repos/"  # where cloned repositories are stored (temporarily)
     binary_folder: str = "binaries/"  # where compiled binaries are stored
     archive_folder: str = "archives/"  # where archived repositories are stored
-    all_binaries : str = "/home/isec/Desktop/ghcc_latest/ghcc/binaries/binary_list"
-    all_jsons : str = "/home/isec/Desktop/ghcc_latest/ghcc/binaries/json_list"
+    all_binaries : str = "binaries/binary_list"
+    all_jsons : str = "binaries/json_list"
     n_procs: int = 0  # 0 for single-threaded execution
     log_file: str = "log.txt"
     clone_timeout: Optional[int] = 600  # wait up to 10 minutes

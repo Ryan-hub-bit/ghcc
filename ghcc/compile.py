@@ -352,7 +352,7 @@ def compile_and_move(repo_binary_dir: str, repo_path: str, makefile_dirs: List[s
             #log(f"json_file: {json_files}")
             for json_file in json_files:
                 filename = json_file.split("/")[-1]
-                #log(f"filename:{filename}")
+                log(f"filename:{filename} in repo_path:{repo_path}")
                 shutil.move(json_file,os.path.join(all_jsons, filename))
             for callsite_file in callsite_files:
                 filename = callsite_file.split("/")[-1]

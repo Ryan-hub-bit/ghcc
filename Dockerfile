@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-FROM gcc:10.3-buster
-=======
 FROM ubuntu:20.04
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
@@ -78,7 +75,6 @@ RUN apt-key adv --keyserver keys.openpgp.org --recv-key 612DEFB798507F25 && \
     ln -s /tmp /var/ftp/var/ftp/tmp && \
     useradd --create-home testuser && \
     echo 'testuser:testuser' | chpasswd
->>>>>>> experiment5
 
 # Install necessary packages.
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -90,14 +86,6 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
 
 # Credit: https://denibertovic.com/posts/handling-permissions-with-docker-volumes/
 # Install `gosu` to avoid running as root.
-<<<<<<< HEAD
-RUN gpg --keyserver keyserver.insect.com --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
-RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.4/gosu-$(dpkg --print-architecture)" \
-    && curl -o /usr/local/bin/gosu.asc -SL "https://github.com/tianon/gosu/releases/download/1.4/gosu-$(dpkg --print-architecture).asc" \
-    && gpg --verify /usr/local/bin/gosu.asc \
-    && rm /usr/local/bin/gosu.asc \
-    && chmod +x /usr/local/bin/gosu
-=======
 ARG server_list="ha.pool.sks-keyservers.net \
                 keyserver.insect.com\
                 hkp://p80.pool.sks-keyservers.net:80 \
@@ -114,7 +102,6 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
    && gpg --verify /usr/local/bin/gosu.asc \
    && rm /usr/local/bin/gosu.asc \
    && chmod +x /usr/local/bin/gosu
->>>>>>> experiment5
 
 # Install packages for compilation & ease-of-use.
 RUN apt-get install -y --no-install-recommends \
@@ -304,11 +291,7 @@ RUN apt-get install -y --no-install-recommends \
     libmnl-dev \
     libmodbus-dev \
     libmodplug-dev \
-<<<<<<< HEAD
-    libmowgli-2-dev \
-=======
     #libmowgli-2-dev \
->>>>>>> experiment5
     libmp3lame-dev \
     libmpc-dev \
     libmpcdec-dev \
@@ -394,11 +377,7 @@ RUN apt-get install -y --no-install-recommends \
     libsnappy-dev \
     libsndfile1-dev \
     libsndio-dev \
-<<<<<<< HEAD
-    libsocks4 \
-=======
     #libsocks4 \
->>>>>>> experiment5
     libsodium-dev \
     libsoil-dev \
     libspandsp-dev \
@@ -482,8 +461,6 @@ RUN apt-get install -y --no-install-recommends \
     tcl-dev \
     vstream-client-dev
 
-<<<<<<< HEAD
-=======
 
 
 COPY ./llvm-typro /typro/llvm-typro
@@ -519,7 +496,6 @@ RUN apt-get update && \
     rm -rf /tmp/*
 
 
->>>>>>> experiment5
 # Install Python libraries.
 COPY requirements.txt /usr/src/
 RUN pip install -r /usr/src/requirements.txt && \
@@ -538,13 +514,8 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 # Copy `ghcc` files into image, and set PYTHONPATH and PATH.
 COPY ghcc/ $CUSTOM_PATH/ghcc/
 COPY scripts/ $CUSTOM_PATH/scripts/
-<<<<<<< HEAD
-ENV PATH="$CUSTOM_PATH/scripts/mock_path:$PATH"
-ENV PYTHONPATH="$CUSTOM_PATH/:$PYTHONPATH"
-=======
 
 
 ENV PATH="$CUSTOM_PATH/scripts/mock_path:$PATH"
 ENV PYTHONPATH="$CUSTOM_PATH/:$PYTHONPATH"
 ENV PATH="/typro/build/bin:$PATH"
->>>>>>> experiment5
